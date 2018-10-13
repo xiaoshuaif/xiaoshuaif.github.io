@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>小帅的博客</title>
+  
+  <subtitle>从不依靠   从不寻找   非常沉默   非常骄傲</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://yoursite.com/"/>
+  <updated>2018-10-13T07:44:19.656Z</updated>
+  <id>http://yoursite.com/</id>
+  
+  <author>
+    <name>小帅</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>hexo域名绑定</title>
+    <link href="http://yoursite.com/2018/10/13/hexo%E5%9F%9F%E5%90%8D%E7%BB%91%E5%AE%9A/"/>
+    <id>http://yoursite.com/2018/10/13/hexo域名绑定/</id>
+    <published>2018-10-13T07:43:26.000Z</published>
+    <updated>2018-10-13T07:44:19.656Z</updated>
+    
+    <content type="html"><![CDATA[<p>hexo域名绑定</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;hexo域名绑定&lt;/p&gt;
+
+      
+    
+    </summary>
+    
+      <category term="hexo" scheme="http://yoursite.com/categories/hexo/"/>
+    
+    
+      <category term="hexo" scheme="http://yoursite.com/tags/hexo/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>hexo搭建流程</title>
+    <link href="http://yoursite.com/2018/10/13/hexo%E6%90%AD%E5%BB%BA%E6%B5%81%E7%A8%8B/"/>
+    <id>http://yoursite.com/2018/10/13/hexo搭建流程/</id>
+    <published>2018-10-13T07:30:27.000Z</published>
+    <updated>2018-10-13T07:41:10.713Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+      <category term="hexo" scheme="http://yoursite.com/categories/hexo/"/>
+    
+    
+      <category term="hexo" scheme="http://yoursite.com/tags/hexo/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>hello world</title>
+    <link href="http://yoursite.com/2018/10/13/hello-world/"/>
+    <id>http://yoursite.com/2018/10/13/hello-world/</id>
+    <published>2018-10-13T02:58:28.000Z</published>
+    <updated>2018-10-13T02:58:28.182Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+  </entry>
+  
+</feed>

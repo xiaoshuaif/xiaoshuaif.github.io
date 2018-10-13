@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title><![CDATA[hexo域名绑定]]></title>
+    <url>%2F2018%2F10%2F13%2Fhexo%E5%9F%9F%E5%90%8D%E7%BB%91%E5%AE%9A%2F</url>
+    <content type="text"><![CDATA[hexo域名绑定]]></content>
+      <categories>
+        <category>hexo</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[hexo搭建流程]]></title>
+    <url>%2F2018%2F10%2F13%2Fhexo%E6%90%AD%E5%BB%BA%E6%B5%81%E7%A8%8B%2F</url>
+    <content type="text"></content>
+      <categories>
+        <category>hexo</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[hello world]]></title>
+    <url>%2F2018%2F10%2F13%2Fhello-world%2F</url>
+    <content type="text"></content>
+  </entry>
+</search>
