@@ -1,6 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[虚拟机使用教程]]></title>
+    <url>%2F2018%2F10%2F14%2FLinux%2F%E8%99%9A%E6%8B%9F%E6%9C%BA%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B%2F</url>
+    <content type="text"></content>
+      <categories>
+        <category>linux</category>
+      </categories>
+      <tags>
+        <tag>虚拟机</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[linux学习笔记]]></title>
+    <url>%2F2018%2F10%2F14%2FLinux%2Flinux%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%2F</url>
+    <content type="text"></content>
+      <categories>
+        <category>linux</category>
+      </categories>
+      <tags>
+        <tag>linux</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[hexo创建文章]]></title>
     <url>%2F2018%2F10%2F14%2Fhexo%2Fhexo%E5%88%9B%E5%BB%BA%E6%96%87%E7%AB%A0%2F</url>
     <content type="text"><![CDATA[123456#include&lt;stdio.h&gt;int main()&#123; printf("Hello hexo"): reture 0;&#125;]]></content>

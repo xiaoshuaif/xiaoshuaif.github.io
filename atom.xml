@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-10-14T13:10:37.367Z</updated>
+  <updated>2018-10-14T13:50:59.925Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,42 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>虚拟机使用教程</title>
+    <link href="http://yoursite.com/2018/10/14/Linux/%E8%99%9A%E6%8B%9F%E6%9C%BA%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/"/>
+    <id>http://yoursite.com/2018/10/14/Linux/虚拟机使用教程/</id>
+    <published>2018-10-14T13:49:20.000Z</published>
+    <updated>2018-10-14T13:50:59.925Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+      <category term="linux" scheme="http://yoursite.com/categories/linux/"/>
+    
+    
+      <category term="虚拟机" scheme="http://yoursite.com/tags/%E8%99%9A%E6%8B%9F%E6%9C%BA/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>linux学习笔记</title>
+    <link href="http://yoursite.com/2018/10/14/Linux/linux%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    <id>http://yoursite.com/2018/10/14/Linux/linux学习笔记/</id>
+    <published>2018-10-14T13:48:44.000Z</published>
+    <updated>2018-10-14T13:50:32.921Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+      <category term="linux" scheme="http://yoursite.com/categories/linux/"/>
+    
+    
+      <category term="linux" scheme="http://yoursite.com/tags/linux/"/>
+    
+  </entry>
   
   <entry>
     <title>hexo创建文章</title>
