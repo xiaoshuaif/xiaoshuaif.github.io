@@ -1,30 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title><![CDATA[hexo域名绑定]]></title>
-    <url>%2F2018%2F10%2F13%2Fhexo%E5%9F%9F%E5%90%8D%E7%BB%91%E5%AE%9A%2F</url>
-    <content type="text"><![CDATA[hexo域名绑定]]></content>
-      <categories>
-        <category>hexo</category>
-      </categories>
-      <tags>
-        <tag>hexo</tag>
-      </tags>
-  </entry>
-  <entry>
     <title><![CDATA[hexo搭建流程]]></title>
-    <url>%2F2018%2F10%2F13%2Fhexo%E6%90%AD%E5%BB%BA%E6%B5%81%E7%A8%8B%2F</url>
-    <content type="text"></content>
+    <url>%2F2018%2F10%2F13%2Fhexo%2Fhexo%E6%90%AD%E5%BB%BA%E6%B5%81%E7%A8%8B%2F</url>
+    <content type="text"><![CDATA[​ 博客，是站在巨人肩膀上搭建的，感谢开源，让我尽情享受拿来主义，但毕竟不是做前端的，有一些坑掉进去爬出来还是费了一些力气的，所以做个记录，利人利己。 ​ 本篇所包含的内容如下： ​ 1.安装Git Bash ​ 2.安装NodeJs ​ 3.安装hexo ​ 4.本地预览 ​ 5.修改主题 ​ 6.创建Github Pages ​ 7.绑定个人域名 环境配置1.安装Git BashGit是一个开源的分布式版本控制系统 下载地址：https://git-scm.com/downloads 安装步骤：双击下载好的exe文件，一路next。（可自选安装目录） 安装好后，右键如图所示： 则安装成功，右键Git Bash Here，查看版本命令：git version 2.安装NodeJsHexo 是使用 NodeJs 开发的，所以一定要安装 NodeJs，里面的npm工具很有用 下载地址：https://nodejs.org/en/ ||（说明：LTS为长期支持版，Current为当前最新版） 安装步骤：下载好后，双击安装，一路next，注意在custom setup这一步要选Add to PATH，这样就不用去配置电脑环境变量了。win+R输入cmd回车，输入path查看nodejs是否配置在里面（环境变量）。 查看版本：node -v 3.安装hexo接下来就是在gitbash中用npm工具搭建hexo了 首先在D盘创建文件夹命名为/hexo（用来存放所有博客的文件），cd到该文件夹下 123456#安装hexo：$ npm i -g hexo#查看版本：$ hexo -v#初始化：$ hexo init 默认目录结构： deploy：执行hexo deploy命令部署到GitHub上的内容目录 public：执行hexo generate命令，输出的静态网页内容目录 scaffolds：layout模板文件目录，其中的md文件可以添加编辑 scripts：扩展脚本目录，这里可以自定义一些javascript脚本 source：文章源码目录 drafts：草稿文章 posts：发布文章 themes：主题文件目录 _config.yml：全局配置文件，大多数的设置都在这里 package.json：应用程序数据，指明hexo的版本等信息，类似于一般软件中的关于按钮 4.本地预览123$ hexo -g #hexo generate生成静态文件$ hexo s #hexo server 运行本地服务#hexo 3.0把服务器独立成个别模块，需要单独安装：npm i hexo-server hexo s启动服务器。默认情况下，访问网址为：http://localhost:4000/ 如果localhost:4000无响应，一般情况下是因为4000端口被占用，使用下面命令更改端口号为5000，然后浏览器输入http://localhost:5000/ 1$ hexo s -g 5000 到这里博客就算是已经搭建成功了，接下来就是更改配置 5.修改及配置主题1.修改站点配置文件（_config.yml）详情见hexo官方文档：https://hexo.io/zh-cn/docs/themes#config-yml 这里先看看最基础的配置，也就是必须要改动的： 123456789#:后一定要有一个空格，否则轻则没有作用，重则报错，无法启动。title: xxx #博客名，也称站点名称subtitle： #副标题author: xxx #作者名字description: xxx # 对站点的描述，搜索引擎会抓取，可以自定义（这个还是加上比较好）language: zh-Hans #语言 简体中文，语言文件在themes主题文件language中timezone: #网站时区，hexo默认使用你电脑的时区theme： next #配置主题，next是我后来配置的，hexo初始为landscape，没有配置其它主题的不要修改 timezone:时区列表 2.更改主题你可以去 主题 里面找到你想要的主题。在GitHub中搜索你要的主题名称，里面会有该主题的如何使用介绍。 接下来使用next主题来介绍： 安装Next主题 1git clone https://github.com/iissnan/hexo-theme-next themes/next 使用Next主题 首先，复制一份打开本地博客目录下的 _config.yml 文件，命名为 _config备份.yml，做为备份，以防改错然后，使用文本编辑器打开本地博客目录下的 _config.yml 文件，搜索，定位 theme 键值，将 theme 的值修改为 next 1theme: next #刚才安装的主题名称 域名访问6.创建Github Pages注册/登录 如果没有账号，前往 GitHub 页面完成注册。有的话直接登录 创建pages：依次点击 1、 2、 Repository name中必须填入：你的用户名.github.io 选中Initialize this repository with a README,其它地方不用修改。最后按Creat respository完成创建。 hexo关联GitHub 修改_config.xml: 1234deplay: type: git repo: https://github.com/你的用户名/你的用户名.github.io.git branch: master 回到github中，配置github账户信息（YourName和YourEmail都替换成你自己的）： 12345678$ git config --global user.name &quot;YourName&quot;$ git config --global user.email &quot;YourEmail&quot;#创建的文件会在用户文件夹下.gitconfig#创建SSH 专为远程登录会话和其他网络服务提供安全性的协议，说白了就是防止信息泄露$ ssh-keygen -t rsa -C &quot;yourmail&quot;$ cd ~/.ssh$ cat id_rsa.pub#将上面获取的ssh放到GitHub中，也可以打开C:\Users\FS226\.ssh\id_rsa.pub中复制 打开GitHub，点击头像下方Setting-&gt;SSH and GPG keys 添加一个 New SSH key ，title随便取，key就填刚刚那一段。 在gitbash中验证是否添加成功：ssh -T git@github.com 最后回到github中，进入hexo目录中，执行以下命令： 12345$ hexo clean #清除缓存文件 (db.json) 和已生成的静态文件 (public)。#在某些情况（尤其是更换主题后），如果发现您对站点的更改无论如何也不生效，您可能需要运行该命令。$ hexo generate #生成静态文件$ hexo deploy #部署网站#注意 第一次deploy的过程中要输入你的username及password 成功后浏览器输入http://yourgithubname.github.io 就可以看到你的个人博客了 7.绑定个人域名 不想绑定的自行忽略 第一步购买域名，随便在哪个网站买一个我是在阿里云购买的 第二部添加域名解析，参考阿里云域名解析上面的新人手册。 命令行ping yourgithubname.github.io ，查看自己网站的IP，添加解析www @ m 接着再次部署一下 进入GitHub中进入你的库 在此处添加你的域名，如我的为 fshuai.top 然后你会发现在code中多了一个CNAME文件。 到这，整个hexo就部署完成了，你可以通过你的域名进行访问你的博客。 || 为了能简化步骤，可以在你的sorce目录中添加一个CNAME文件，无后缀，填入你的域名。 123$ hexo clean$ hexo g$ hexo d 下一篇介绍next的配置和hexo创建文章以及使用typora进行写作。 限于水平，疏漏和错误难免，敬请读者批评指正。如有任何意见，请发送至邮箱。]]></content>
       <categories>
         <category>hexo</category>
       </categories>
       <tags>
         <tag>hexo</tag>
       </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[hello world]]></title>
-    <url>%2F2018%2F10%2F13%2Fhello-world%2F</url>
-    <content type="text"></content>
   </entry>
 </search>
