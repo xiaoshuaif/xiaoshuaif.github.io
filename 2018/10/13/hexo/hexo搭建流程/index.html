@@ -121,7 +121,7 @@
 <meta property="og:image" content="http://yoursite.com/2018/10/13/hexo/hexo搭建流程/ssh-key.png">
 <meta property="og:image" content="http://yoursite.com/2018/10/13/hexo/hexo搭建流程/settings.png">
 <meta property="og:image" content="http://yoursite.com/2018/10/13/hexo/hexo搭建流程/settings2.png">
-<meta property="og:updated_time" content="2018-10-14T12:28:12.769Z">
+<meta property="og:updated_time" content="2018-10-15T13:04:27.463Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="hexo搭建流程">
 <meta name="twitter:description" content="​        博客，是站在巨人肩膀上搭建的，感谢开源，让我尽情享受拿来主义，但毕竟不是做前端的，有一些坑掉进去爬出来还是费了一些力气的，所以做个记录，利人利己。 ​    本篇所包含的内容如下： ​        1.安装Git Bash ​        2.安装NodeJs ​        3.安装hexo ​        4.本地预览 ​        5.修改主题 ​">
@@ -533,8 +533,9 @@
 <li>在gitbash中验证是否添加成功：<code>ssh -T git@github.com</code></li>
 <li>最后回到github中，进入hexo目录中，执行以下命令：</li>
 </ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">$ hexo clean 	#清除缓存文件 (db.json) 和已生成的静态文件 (public)。</span><br><span class="line">#在某些情况（尤其是更换主题后），如果发现您对站点的更改无论如何也不生效，您可能需要运行该命令。</span><br><span class="line">$ hexo generate #生成静态文件</span><br><span class="line">$ hexo deploy	#部署网站</span><br><span class="line">#注意 第一次deploy的过程中要输入你的username及password</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">$ hexo-deployer-git #安装自动部署发布工具</span><br><span class="line">$ hexo clean 	#清除缓存文件 (db.json) 和已生成的静态文件 (public)。</span><br><span class="line">#在某些情况（尤其是更换主题后），如果发现您对站点的更改无论如何也不生效，您可能需要运行该命令。</span><br><span class="line">$ hexo generate #生成静态文件</span><br><span class="line">$ hexo deploy	#部署网站</span><br><span class="line">#注意 第一次deploy的过程中要输入你的username及password</span><br></pre></td></tr></table></figure>
 <p>成功后浏览器输入<code>http://yourgithubname.github.io</code> 就可以看到你的个人博客了</p>
+<p>以后要发布新文章，执行上<strong>三步</strong>命令即可。</p>
 <h4 id="绑定个人域名"><a href="#绑定个人域名" class="headerlink" title="绑定个人域名"></a>绑定个人域名</h4><ul>
 <li>不想绑定的自行忽略<ul>
 <li>第一步购买域名，随便在哪个网站买一个我是在阿里云购买的</li>
