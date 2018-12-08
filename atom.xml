@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-10-26T15:03:57.141Z</updated>
+  <updated>2018-12-08T12:53:30.432Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>wireshark启动提示错误</title>
+    <link href="http://yoursite.com/2018/12/08/HCNA%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/wireshark%E5%90%AF%E5%8A%A8%E6%8F%90%E7%A4%BA%E9%94%99%E8%AF%AF/"/>
+    <id>http://yoursite.com/2018/12/08/HCNA学习笔记/wireshark启动提示错误/</id>
+    <published>2018-12-08T12:34:28.000Z</published>
+    <updated>2018-12-08T12:53:30.432Z</updated>
+    
+    <content type="html"><![CDATA[<p>wireshark是一个抓包软件。刚安装上稳定版的时候不能切换为中文，于是下了个开发版。</p><p>刚进去的时候出现如下错误：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Lua: Error during loading:</span><br><span class="line">cannot open D:\***\Wireshark\console.lua: No such file or directory</span><br></pre></td></tr></table></figure><p>如图：</p><p><img src="/2018/12/08/HCNA学习笔记/wireshark启动提示错误/1.png" alt=""></p><p>解决方法：</p><p>将wireshark目录下的init.lua文件的倒数第二行的</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">dofile(DATA_DIR..&quot;console.lua&quot;)</span><br></pre></td></tr></table></figure><p>改为</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">--dofile(DATA_DIR..&quot;console.lua&quot;)</span><br></pre></td></tr></table></figure><p>重新打开即可。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;wireshark是一个抓包软件。刚安装上稳定版的时候不能切换为中文，于是下了个开发版。&lt;/p&gt;
+&lt;p&gt;刚进去的时候出现如下错误：&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;
+      
+    
+    </summary>
+    
+      <category term="HCNA" scheme="http://yoursite.com/categories/HCNA/"/>
+    
+    
+      <category term="wireshark" scheme="http://yoursite.com/tags/wireshark/"/>
+    
+  </entry>
   
   <entry>
     <title>顺序表的合并</title>
