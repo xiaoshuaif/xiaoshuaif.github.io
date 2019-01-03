@@ -121,7 +121,7 @@
 <meta property="og:image" content="http://yoursite.com/2018/10/13/hexo/hexo搭建流程/ssh-key.png">
 <meta property="og:image" content="http://yoursite.com/2018/10/13/hexo/hexo搭建流程/settings.png">
 <meta property="og:image" content="http://yoursite.com/2018/10/13/hexo/hexo搭建流程/settings2.png">
-<meta property="og:updated_time" content="2018-10-25T05:18:39.456Z">
+<meta property="og:updated_time" content="2019-01-03T08:05:41.051Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="hexo搭建流程">
 <meta name="twitter:description" content="​        博客，是站在巨人肩膀上搭建的，感谢开源，让我尽情享受拿来主义，但毕竟不是做前端的，有一些坑掉进去爬出来还是费了一些力气的，所以做个记录，利人利己。 ​    本篇所包含的内容如下： ​        1.安装Git Bash ​        2.安装NodeJs ​        3.安装hexo ​        4.本地预览 ​        5.修改主题 ​">
@@ -525,7 +525,7 @@
 <p>修改_config.xml:</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deplay:</span><br><span class="line">	type: git</span><br><span class="line">	repo: https://github.com/你的用户名/你的用户名.github.io.git</span><br><span class="line">	branch: master</span><br></pre></td></tr></table></figure>
 <p>回到github中，配置github账户信息（YourName和YourEmail都替换成你自己的）：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">$ git config --global user.name &quot;YourName&quot;</span><br><span class="line">$ git config --global user.email &quot;YourEmail&quot;</span><br><span class="line">#创建的文件会在用户文件夹下.gitconfig</span><br><span class="line">#创建SSH 专为远程登录会话和其他网络服务提供安全性的协议，说白了就是防止信息泄露</span><br><span class="line">$ ssh-keygen -t rsa -C &quot;yourmail&quot;</span><br><span class="line">$ cd ~/.ssh</span><br><span class="line">$ cat id_rsa.pub</span><br><span class="line">#将上面获取的ssh放到GitHub中，也可以打开C:\Users\FS226\.ssh\id_rsa.pub中复制</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">$ git config --global user.name &quot;YourName&quot;</span><br><span class="line">$ git config --global user.email &quot;YourEmail&quot;</span><br><span class="line">#创建的文件会在用户文件夹下.gitconfig</span><br><span class="line">#创建SSH 专为远程登录会话和其他网络服务提供安全性的协议，执行完后不需要每次都输入密码</span><br><span class="line">$ ssh-keygen -t rsa -C &quot;yourmail&quot;</span><br><span class="line">$ cd ~/.ssh</span><br><span class="line">$ cat id_rsa.pub</span><br><span class="line">#将上面获取的ssh放到GitHub中，也可以打开C:\Users\FS226\.ssh\id_rsa.pub中复制</span><br></pre></td></tr></table></figure>
 <p>打开GitHub，点击头像下方Setting-&gt;SSH and GPG keys</p>
 <p><img src="/2018/10/13/hexo/hexo搭建流程/ssh-key.png" alt=""></p>
 <p>添加一个 <code>New SSH key</code> ，title随便取，key就填刚刚那一段。</p>
